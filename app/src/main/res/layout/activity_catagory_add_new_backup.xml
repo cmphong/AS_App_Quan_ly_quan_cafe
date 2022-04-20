@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myBackgroundSecondary"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Category"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_bigest"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+        <LinearLayout
+            android:id="@+id/group_icon_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Icon"
+                android:textSize="@dimen/size_normal"
+                android:textColor="@color/white"
+                tools:textColor="@color/white"
+                />
+            <ImageView
+                android:id="@+id/iv_add_category_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_cat_drink"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="10dp"
+                app:tint="@color/primary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/group_type_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/group_icon_select"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category Name"
+                android:textSize="@dimen/size_normal"
+                android:textColor="@color/white"
+                tools:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/edt_add_category_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/size_normal"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey400"
+                android:hint="Name"
+                android:background="@drawable/background_r50_my_background_primary"
+                android:paddingVertical="14dp"
+                android:includeFontPadding="true"
+                android:paddingLeft="15dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Parent"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_normal"
+        tools:textColor="@color/white" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxBackgroundColor="@color/myBackgroundPrimary"
+        app:boxCornerRadiusBottomEnd="50dp"
+        app:boxCornerRadiusBottomStart="50dp"
+        app:boxCornerRadiusTopEnd="50dp"
+        app:boxCornerRadiusTopStart="50dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:endIconTint="@color/primary">
+
+        <AutoCompleteTextView
+            android:id="@+id/actv_add_category_select_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:ellipsize="end"
+            android:inputType="none"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="No dependence"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_normal"
+            tools:ignore="LabelFor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textSize="@dimen/size_normal"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            android:background="@drawable/background_r50_left_color_accent"
+            android:paddingVertical="10dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_add_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textSize="@dimen/size_normal"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            android:background="@drawable/background_r50_right_color_primary"
+            android:paddingVertical="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>

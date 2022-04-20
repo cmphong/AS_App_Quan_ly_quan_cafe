@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myBackgroundSecondary"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Add_Category"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_bigest"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:id="@+id/tv_warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Required_fields_cannot_be_empty"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/size_normal"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:id="@+id/group_icon_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Icon"
+                android:textSize="@dimen/size_normal"
+                android:textColor="@color/white"
+                tools:textColor="@color/white"
+                />
+            <ImageView
+                android:id="@+id/iv_add_category_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_cat_drink"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="10dp"
+                app:tint="@color/primary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/group_type_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/group_icon_select"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Category_Name"
+                android:textSize="@dimen/size_normal"
+                android:textColor="@color/white"
+                tools:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/edt_category_add_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/size_normal"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey400"
+                android:hint="@string/Name"
+                android:background="@drawable/background_r50_my_background_primary"
+                android:paddingVertical="14dp"
+                android:includeFontPadding="true"
+                android:paddingLeft="15dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+
+        <Button
+            android:id="@+id/btn_cancel_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Cancel"
+            android:textSize="@dimen/size_normal"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            android:background="@drawable/background_r50_left_color_accent"
+            android:paddingVertical="10dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_add_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Add"
+            android:textSize="@dimen/size_normal"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            android:background="@drawable/background_r50_right_color_primary"
+            android:paddingVertical="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>

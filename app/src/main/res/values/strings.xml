@@ -1,0 +1,226 @@
+<resources>
+    <string name="app_name" translatable="false">POS Coffee Shop</string>
+
+    <string name="back_login" translatable="false"><u>Login</u></string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+
+    <!-- ===== Fragment_Order_Detail_ViewPager.java ============================ -->
+    <string name="Order_Successful">Order Successful!</string>
+
+    <!-- ===== activity_sign_up.xml ============================================ -->
+    <string name="Email_" translatable="false">Email (*)</string>
+    <string name="Password_">Password (*)</string>
+    <string name="Password_confirm_">Password Confirm (*)</string>
+    <string name="Create_successful">Create successful!</string>
+    <string name="Email_or_Password_is_incorrect">Email or Password is incorrect</string>
+    <string name="Password_must_container_at_least_8_characters">Password must container at least 8 characters</string>
+    <string name="Password_and_Password_Confirm_must_be_match">Password and Password Confirm must be match</string>
+    <string name="Your_email_is_incorrect">Your email is incorrect</string>
+
+
+    <!-- ===== Activity_SignUp_Verification.java ============================================ -->
+    <string name="Enter_Your_Code">Enter Your Code</string>
+    <string name="Code_is_sent_to">Code is sent to:</string>
+    <string name="Verify">Verify</string>
+    <string name="Resend_code">Resend code</string>
+    <string name="The_verification_code_entered_was_invalid">The verification code entered was invalid</string>
+
+    <!-- ===== Activity_Login.java ============================================ -->
+    <string name="Login_failed_please_try_again">Login failed, please try again!</string>
+    <string name="Email_and_Password_is_required">Email and Password is required</string>
+    <string name="Login_successful">Login successful!</string>
+    <string name="Your_phone_number_is_invalid">Your phone number is invalid</string>
+
+    <!-- ===== activity_login.xml ============================================ -->
+    <string name="Welcome_Back">Welcome Back!</string>
+    <string name="Login_or_Signup_to_continue">Login/Signup to continue</string>
+    <string name="Forget_password">Forget Password?</string>
+    <string name="Or">Or</string>
+
+
+    <!-- ===== activity_drink_add_new.xml ============================================ -->
+    <string name="Choose_Drink">Choose Drink</string>
+    <string name="Table_name">Table name (*)</string>
+    <string name="Drink_Name">Drink Name (*)</string>
+    <string name="Type_name">Type name</string>
+    <string name="Image">Image</string>
+    <string name="Group">Group</string>
+    <string name="Select_one">Select one</string>
+    <string name="Price_">Price (*)</string>
+    <string name="Type_price">Type price</string>
+    <string name="Unit_">Unit (*)</string>
+    <string name="Unit">Unit</string>
+    <string name="Description">Description</string>
+    <string name="Type_Description">Type Description</string>
+    <string name="is_required">(*) is required</string>
+    <string name="Required_fields_cannot_be_empty">\'Required fields\' cannot be empty</string>
+
+    <!-- ===== dialog_select_group_category.xml ============================================ -->
+    <string name="Select_icon">Select icon</string>
+    <string name="Choose_a_icon">Choose a icon:</string>
+    <string name="Update">Update</string>
+
+
+    <!-- ===== Activity_Payment.java ============================================ -->
+    <string name="Payment_successful">Payment successful!</string>
+
+    <!-- ===== activity_payment.xml ============================================ -->
+    <string name="Payment">Payment</string>
+    <string name="To_Pay">To Pay:</string>
+    <string name="Amount_receive">Amount recevie:</string>
+    <string name="Change">Change:</string>
+    <string name="Done">Done</string>
+    <string name="Payment_confirm">Payment confirm</string>
+    <string name="Confirm_and_Print">Confirm &#38; Print</string>
+    <string name="Pay">Pay</string>
+
+
+    <!-- ===== activity_user_info.xml ============================================ -->
+    <string name="Photo">Photo</string>
+    <string name="i_Your_name"><i>Your name</i></string>
+
+
+    <!-- ===== activity_checkout.xml ============================================ -->
+    <string name="Item">Item</string>
+    <string name="Price">Price</string>
+    <string name="Qnt">Qnt.</string>
+    <string name="Total">Total</string>
+    <string name="Sub_total">Sub total:</string>
+    <string name="Tax">Tax:</string>
+    <string name="Other_Charge">Other Charge:</string>
+    <string name="Amount_to_Pay">Amoutn to Pay:</string>
+
+
+    <!-- ===== fragment_category.xml ============================================ -->
+    <string name="All">All</string>
+    <string name="Popular">Popular</string>
+
+    <!-- ===== fragment_table.xml ============================================ -->
+    <string name="Alert">Alert</string>
+    <string name="Please_choose_empty_table">Please choose empty table</string>
+
+
+    <!-- ===== DIALOG ============================================ -->
+    <string name="Delete_Confirm">Delete Confirm</string>
+    <string name="Are_you_sure">Are you sure?</string>
+
+
+    <!-- ===== showToast.xml ============================================ -->
+    <string name="Delete_Successful">Delete Successful!</string>
+    <string name="Update_Successful">Update Successful!</string>
+    <string name="Add_Successful">Add Successful!</string>
+    <string name="Name_is_required_try_again">Name is required, try again!</string>
+
+
+    <!-- ===== activity_add_new_category.xml ============================================ -->
+    <string name="Icon">Icon</string>
+    <string name="Category_Name">Category Name (*)</string>
+
+    <!-- ===== activity_dashboard.xml ============================================ -->
+    <string name="Home_screen">Home screen</string>
+    <string name="Category_Management">Category Management</string>
+    <string name="Settings">Settings</string>
+    <string name="Add_Category">Add Category</string>
+
+    <string name="No_Order">No Order</string>
+    <string name="Ordered">Ordered</string>
+    <string name="items">items</string>
+    <string name="item">item</string>
+
+
+    <!-- ===== activity_sign_up.xml ============================================= -->
+    <string name="Register">Register</string>
+    <string name="Username">Username</string>
+    <string name="Email" translatable="false">Email</string>
+    <string name="Phone">Phone</string>
+    <string name="Password">Password</string>
+    <string name="Password_confirm">Password Confirm</string>
+    <string name="Create">Create</string>
+
+    <!-- ===== fragment_settings.xml ============================================== -->
+    <string name="Logo">Logo</string>
+    <string name="Choose_a_black_and_white_photo">(Choose a black and white photo)</string>
+    <string name="Store_name">Store name</string>
+    <string name="Enter_name">Enter name</string>
+    <string name="Phone_number">Phone number</string>
+    <string name="Enter_phone_number">Enter phone number</string>
+    <string name="Address">Address</string>
+    <string name="Enter_address">Enter address</string>
+    <string name="Language">Language</string>
+
+
+    <!-- ===== fragment_print_management.xml ============================================== -->
+    <string name="Not_yet_printer">Not yet printer</string>
+    <string name="Add_Printer">Add Printer</string>
+    <string name="Paper_Size">Paper Size</string>
+    <string name="Network">Network</string>
+    <string name="Print_name">Print name</string>
+    <string name="Select_device">Select device:</string>
+    <string name="Enter_your_printer_IP">Enter your printer IP:</string>
+    <string name="ex_192_168_0_10">ex: 192.168.0.10</string>
+    <string name="Test">Test</string>
+    <string name="Printer_Detail">Printer Detail</string>
+    <string name="Set_default">Set default:</string>
+    <string name="Default_printer">Default printer</string>
+    <string name="Printer_method">Printer method:</string>
+    <string name="Ip_Address">IP Address:</string>
+    <string name="MAC_Address">MAC Address:</string>
+    <string name="via_LAN">via LAN</string>
+    <string name="via_Bluetooth">via Bluetooth</string>
+
+    <!-- ===== Fragment_Print_Management.xml ============================================== -->
+    <string name="Printer_IP_Address_is_required_try_again">Printer IP Address is required, try again!</string>
+    <string name="Set_Printer_Successful">Set Printer Successful!</string>
+    <string name="Update_Printer_Successful">Update Printer Successful!</string>
+    <string name="Save_not_success_try_agian">Save not success, try again!</string>
+    <string name="via">via</string>
+    <string name="Please_choose_Bluetooth_device">Please choose Bluetooth device</string>
+
+
+    <!-- ===== item_printer.xml =================================  -->
+    <string name="_default_">(default)</string>
+
+
+    <!-- ===== fragment_order_detail.xml =================================  -->
+    <string name="Order_List">Order List</string>
+    <string name="Total_Amount">Total Amount</string>
+
+
+    <!-- ===== COMMON DATA =================================  -->
+    <string name="Cancel">Cancel</string>
+    <string name="Save">Save</string>
+    <string name="Confirm">Confirm</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="Back">Back</string>
+    <string name="Add">Add</string>
+    <string name="New">New</string>
+    <string name="Edit">Edit</string>
+    <string name="Delete">Delete</string>
+    <string name="Login">Login</string>
+    <string name="Continue">Continue</string>
+    <string name="Logout">Logout</string>
+    <string name="Your_name">Your name</string>
+    <string name="Name">Name</string>
+    <string name="Print">Print</string>
+    <string name="Add_Drink">Add Drink</string>
+    <string name="Add_Table">Add Table</string>
+    <string name="Print_Management">Print Management</string>
+    <string name="Create_New_Account">Create New Account</string>
+
+    <string name="beer">beer</string>
+    <string name="cafe">cafe</string>
+    <string name="cans">cans</string>
+    <string name="cigarette_packet">cigarette_packet</string>
+    <string name="drink">drink</string>
+    <string name="tea">tea</string>
+    <string name="water_fruit">water_fruit</string>
+
+<!--    <string name="default_web_client_id">892828035521-ki2cn8egh7sr3ebp8ljbvq10e86ngjqd.apps.googleusercontent.com</string>-->
+<!--    <string name="default_web_client_id" translatable="false">892828035521-rmgajccf794l5uitj4v7kjs2ggejtpfc.apps.googleusercontent.com</string>-->
+
+</resources>

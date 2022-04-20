@@ -1,0 +1,121 @@
+{
+    "user_id": {
+        "Category": {
+            "Alcohol": {
+                "icon": "ic_alcohol",
+                "name": "Alcohol",
+                "sub_categories": {
+                    "id_cat_sub_beer": true,
+                    "id_cat_sub_wine": true
+                }
+            }
+        },
+        "Category_sub": {
+            "id_cat_sub_beer": {
+                "icon": "ic_beer",
+                "items": {
+                    "id_br_001": true,
+                    "id_br_002": true
+                },
+                "name": "Beer",
+                "parent": "id_alcohol"
+            },
+            "id_cat_sub_cocktail": {
+                "icon": "ic_cocktail",
+                "items": {
+                    "id_ct_001": true,
+                    "id_ct_002": true
+                },
+                "name": "Cocktail",
+                "parent": ""
+            },
+            "id_cat_sub_wine": {
+                "icon": "ic_wine",
+                "items": {
+                    "id_we_001": true,
+                    "id_we_002": true
+                },
+                "name": "Wine",
+                "parent": "id_alcohol"
+            }
+        },
+        "Drinks": {
+            "id_br_001": {
+                "category": "id_Beer",
+                "description": "",
+                "name": "Heineken",
+                "price": 10,
+                "unit": "bottle"
+            },
+            "id_br_002": {
+                "category": "id_beer",
+                "description": "",
+                "name": "Voll Damm",
+                "price ": 10,
+                "unit": "bottle"
+            },
+            "id_ct_001": {
+                "category": "id_cocktail",
+                "description": "",
+                "name": "Mojito",
+                "price": 9.9,
+                "unit": "glass"
+            }
+        },
+        "Floor": {
+            "id_floor_0": {
+                "items": [
+                    "id_tb_001",
+                    "id_tb_002"
+                ],
+                "name": "Ground_Floor"
+            },
+            "id_floor_1": {
+                "items": [
+                    "id_tb_101",
+                    "id_tb_102"
+                ],
+                "name": "Floor_1"
+            },
+            "id_floor_2": {
+                "items": [
+                    "id_tb_201",
+                    "id_tb_202"
+                ],
+                "name": "Floor_2"
+            }
+        },
+        "Table": {
+            "id_tb_001": {
+                "custommer": "Mr.XXX",
+                "employee": "Ms.AAA",
+                "floor": "id_ground_floor",
+                "items": {
+                    "id_br_001": 2,
+                    "id_br_002": 1,
+                    "id_ct_001": 1
+                },
+                "name": "Table_001",
+                "person_count": 4
+            },
+            "id_tb_002": {
+                "custommer": "",
+                "employee": "",
+                "floor": "id_ground_floor",
+                "items": "",
+                "name": "Table_002",
+                "person_count": 0
+            },
+            "id_tb_101": {
+                "custommer": "Mr.YYY",
+                "employee": "MsCCC",
+                "floor": "Floor_1",
+                "items": {
+                    "id_ct_002": 2
+                },
+                "name": "Table_101",
+                "person_count": 2
+            }
+        }
+    }
+}

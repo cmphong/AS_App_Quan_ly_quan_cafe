@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10"
+    android:padding="10dp"
+    android:gravity="top"
+
+    android:background="#121212"
+    >
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Farm Ville Pizza"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_normal"
+        android:layout_weight="2.5"
+        />
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="12.00"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_normal"
+        android:layout_weight="2"
+        android:textAlignment="textEnd"
+        android:layout_marginStart="5dp"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3.5"
+        android:gravity="center"
+        android:layout_marginStart="5dp">
+
+        <ImageButton
+            android:id="@+id/btn_decrease"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:textColor="@color/white"
+            android:src="@drawable/button_minus"
+            android:background="@null"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/tv_quantities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_normal"
+            android:layout_marginHorizontal="10dp"
+            />
+        <ImageButton
+            android:id="@+id/btn_increase"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@null"
+            android:src="@drawable/button_plus"
+            android:scaleType="fitXY"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="120.00"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_normal"
+        android:layout_weight="2"
+        android:textAlignment="textEnd"
+        android:layout_marginStart="5dp"
+        />
+
+</LinearLayout>

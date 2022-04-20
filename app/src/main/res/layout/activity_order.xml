@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/myBackgroundSecondary">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <!-- ToolBar widget -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_choose_drink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/myBackgroundSecondary"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/Choose_Drink"
+            app:titleTextColor="#ffff" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <!-- TextView of the Activity -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vp_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <com.zhpan.indicator.IndicatorView
+            android:id="@+id/indicator_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginVertical="20dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

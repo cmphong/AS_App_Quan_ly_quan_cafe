@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myBackgroundPrimary">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Welcome_Back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/heading_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Login_or_Signup_to_continue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_big"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+        <TextView
+            android:id="@+id/tv_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Your_phone_number_is_invalid"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/size_normal"
+            app:layout_constraintTop_toBottomOf="@id/textView2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/edt_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/background_r10_my_background_secondary"
+            android:hint="@string/Phone_number"
+            android:inputType="number"
+            android:digits="1234567890"
+            android:paddingVertical="15dp"
+            android:paddingLeft="80dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grey400"
+            android:textSize="@dimen/size_normal"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/edt_phone_number"
+            app:layout_constraintEnd_toEndOf="@+id/edt_phone_number"
+            app:layout_constraintTop_toTopOf="@+id/edt_phone_number"
+            app:layout_constraintVertical_bias="0.52"
+            app:srcCompat="@drawable/ic_call"
+            app:tint="@color/grey400" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/edt_phone_number"
+            app:layout_constraintBottom_toBottomOf="@id/edt_phone_number"
+            app:layout_constraintStart_toStartOf="@id/edt_phone_number"
+            android:layout_marginStart="15dp"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_flag_vietnam"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+84"
+                android:textColor="@color/white"
+                android:layout_marginStart="5dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/background_r10_effect_color_primary"
+            android:paddingVertical="10dp"
+            android:text="@string/Continue"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_phone_number" />
+
+        <TextView
+            android:id="@+id/tv_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Or"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_login"
+            android:layout_marginTop="20dp"
+            />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btn_google_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_or"
+            android:layout_marginTop="20dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_new_account"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:text="@string/Create_New_Account"-->
+<!--        android:textColor="@color/primary"-->
+<!--        android:textSize="@dimen/size_big"-->
+<!--        android:textAlignment="center"-->
+<!--        android:paddingVertical="10dp"/>-->
+
+
+</RelativeLayout>

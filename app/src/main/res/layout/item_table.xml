@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_r10_effect_stroke_color_primary"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:id="@+id/table_item">
+
+    <TextView
+        android:id="@+id/tv_table_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Table 1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_bigest"
+        />
+
+    <TextView
+        android:id="@+id/tv_checkin_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1:33"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_normal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_ordering_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/No_Order"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_normal"
+        android:layout_below="@id/tv_table_name"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+
+</RelativeLayout>

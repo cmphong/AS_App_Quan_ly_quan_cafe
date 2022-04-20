@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title=""
+        android:icon="@drawable/ic_plus"
+        app:showAsAction="always"
+        >
+        <menu>
+            <item
+                android:id="@+id/menu_add_category"
+                android:title="@string/Add_Category"
+                android:icon="@drawable/ic_category"
+                />
+            <item
+                android:id="@+id/menu_add_drink"
+                android:title="@string/Add_Drink"
+                android:icon="@drawable/ic_fastfood"
+                />
+            <item
+                android:id="@+id/menu_add_table"
+                android:title="@string/Add_Table"
+                android:icon="@drawable/ic_camp_table"
+                />
+        </menu>
+    </item>
+</menu>

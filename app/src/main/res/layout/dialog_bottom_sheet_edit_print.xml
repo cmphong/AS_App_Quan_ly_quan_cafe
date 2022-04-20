@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottom_sheet_dialog_container">
+<!-- ===== TITLE ==================================== -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Printer_Detail"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_bigest"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:background="@drawable/background_r10_top_color_grey400"
+        />
+
+<!-- ===== BODY =============================== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:background="@color/white">
+
+<!-- ===== SET DEFAULT ================================= -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_EDIT_title_set_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/Set_default"
+                android:textColor="@color/grey500"
+                android:textSize="@dimen/size_normal" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/sw_EDIT_default"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_small"
+                android:checked="false"
+                android:layout_alignParentEnd="true"
+                />
+            <TextView
+                android:id="@+id/tv_EDIT_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Default_printer"
+                android:textColor="@color/grey500"
+                android:textSize="@dimen/size_normal"
+                android:layout_alignParentEnd="true"
+                android:textStyle="italic"
+                />
+        </RelativeLayout>
+<!--                android:enabled="false"-->
+<!--                android:clickable="false"-->
+<!--                app:thumbTint="@color/grey500"-->
+<!--                app:trackTint="@color/grey600"-->
+
+<!-- ===== METHOD DETAIL =============================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:gravity="center_vertical"
+            android:paddingVertical="5dp"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Printer_method"
+                android:textColor="@color/grey100"
+                android:textSize="@dimen/size_normal"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layoutDirection="rtl"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/tv_EDIT_method_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/via_LAN"
+                    android:textColor="@color/grey100"
+                    android:textSize="@dimen/size_normal"
+                    android:gravity="end" />
+                <ImageView
+                    android:id="@+id/iv_EDIT_ic_method"
+                    android:layout_width="@dimen/size_bigest"
+                    android:layout_height="@dimen/size_bigest"
+                    android:src="@drawable/ic_wifi"
+                    android:layout_marginStart="10dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!-- ===== IP/MAC ADDRESS =============================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/tv_EDIT_title_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Ip_Address"
+                android:textColor="@color/grey100"
+                android:textSize="@dimen/size_normal"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layoutDirection="rtl"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/tv_EDIT_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="192.168.111.224"
+                    android:textColor="@color/grey100"
+                    android:textSize="@dimen/size_normal"
+                    android:gravity="end" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!-- ===== PAPER SIZE =============================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:gravity="center_vertical"
+            android:paddingVertical="5dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:text="@string/Paper_Size"
+                android:textColor="@color/grey100"
+                android:textSize="@dimen/size_normal"/>
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.9"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|end"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"/>
+                <RadioButton
+                    android:id="@+id/rb_EDIT_2inch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:checked="true"
+                    android:text="57/58mm"
+                    android:textColor="@color/grey100"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".7"/>
+
+                <RadioButton
+                    android:id="@+id/rb_EDIT_3inch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="80mm"
+                    android:textColor="@color/grey100"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+<!-- ===== PRINT NAME =============================== -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Print_name"
+            android:textColorHint="@color/grey500"
+            app:boxStrokeColor="@color/primary"
+            app:hintTextColor="@color/primary"
+            android:theme="@style/TextInputLayoutAppearance"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_EDIT_print_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey100"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!-- ===== GROUP BUTTON =============================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:id="@+id/btn_EDIT_delete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Delete"
+                android:textColor="@color/white"
+                app:backgroundTint="@null"
+                android:background="@drawable/background_r10_effect_color_accent"
+                android:layout_marginEnd="10dp"
+                />
+            <Button
+                android:id="@+id/btn_EDIT_save"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Save"
+                android:textColor="@color/white"
+                app:backgroundTint="@null"
+                android:background="@drawable/background_r10_effect_color_primary"
+                android:layout_marginStart="10dp"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.POSCoffeeShop" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+<!--        <item name="colorPrimaryVariant">@color/purple_700</item>-->
+        <item name="colorPrimaryVariant">@color/myBackgroundPrimary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="custom_option_menu" parent="Theme.MaterialComponents.Light">
+        <item name="textFillColor">@color/grey200</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="backgroundTint">@color/primary</item>
+    </style>
+
+
+    <style name="colorControlHiglight_grey200">
+        <item name="colorControlHighlight">@color/grey200</item>
+    </style>
+    
+    <style name="Theme.POSCoffeeShop.GreenRipple">
+        <item name="colorControlHighlight">@color/primary</item>
+    </style>
+
+
+    <!-- Ripple for button Arrow Left in activity Activity_Payment.java -->
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">@color/primary</item>
+    </style>
+    <style name="SelectableItemBackground">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <!-- BottomSheetDialog  -->
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <!-- Material TextInput -->
+    <style name="TextInputLayoutAppearance" parent="Widget.Design.TextInputLayout">
+        <item name="colorControlActivated">@color/primary</item>
+    </style>
+
+</resources>

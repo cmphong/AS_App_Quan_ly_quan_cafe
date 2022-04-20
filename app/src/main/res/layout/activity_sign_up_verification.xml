@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/myBackgroundPrimary"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Enter_Your_Code"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_bigest"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/tv_code_sent_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Code_is_sent_to"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_normal"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edt_enter_otp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_r5_my_background_secondary"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="@dimen/heading_1"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:letterSpacing=".7"
+        android:inputType="number"
+        android:digits="1234567890"
+        android:maxLength="6"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="end|center_vertical">
+
+        <TextView
+            android:id="@+id/tv_resend_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Resend_code"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/size_small"
+            android:gravity="end"
+            android:paddingVertical="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_signup_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/Verify"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/background_r5_effect_color_primary"
+        />
+
+</LinearLayout>

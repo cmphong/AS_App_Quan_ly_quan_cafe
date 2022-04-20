@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_marginVertical="5dp"
+    android:background="@drawable/background_r5_color_grey700"
+    android:id="@+id/rl_printer_item">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tv_device_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Print Name"
+            android:textColor="@color/grey100"
+            android:textSize="@dimen/size_normal"/>
+        <TextView
+            android:id="@+id/tv_macAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00:11:22:33:44:55"
+            android:textColor="@color/grey100"
+            android:textSize="@dimen/size_normal"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_is_select"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_check_circle"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@id/btn_paired_device_test"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/btn_paired_device_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Test"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="@color/primary"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottom_sheet_dialog_container">
+<!-- ===== TITLE ==================================== -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Add_Printer"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_bigest"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:background="@drawable/background_r10_top_color_grey400"
+        />
+
+<!-- ===== BODY =============================== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:background="@color/white">
+
+<!-- ===== PAPER SIZE =============================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:gravity="center_vertical"
+            android:paddingVertical="5dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:text="@string/Paper_Size"
+                android:textColor="@color/grey100"
+                android:textSize="@dimen/size_normal"/>
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.9"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|end"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"/>
+                <RadioButton
+                    android:id="@+id/rb_ADD_2inch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:checked="true"
+                    android:text="57/58mm"
+                    android:textColor="@color/grey100"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".7"/>
+
+                <RadioButton
+                    android:id="@+id/rb_ADD_3inch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="80mm"
+                    android:textColor="@color/grey100"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+
+<!-- ===== CHOOSE METHOD =============================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingHorizontal="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_r5_color_grey700"
+            android:gravity="center_vertical"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                >
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_ADD_bluetooth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bluetooth"
+                    app:icon="@drawable/ic_bluetooth"
+
+                    android:textColor="@color/grey500"
+                    app:iconTint="@color/grey500"
+                    app:strokeColor="#0000"
+
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                    android:layout_marginEnd="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                >
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_ADD_network"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Network"
+                    app:icon="@drawable/ic_wifi"
+
+                    android:textColor="@color/grey500"
+                    app:iconTint="@color/grey500"
+                    app:strokeColor="#0000"
+
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                    android:layout_marginStart="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+<!-- ===== BLUETOOTH ============================== -->
+        <RelativeLayout
+            android:id="@+id/method_BLUETOOTH"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <!-- ===== PRINT NAME =============================== -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_ADD_bluetooth_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Print_name"
+                android:textColorHint="@color/grey500"
+                app:boxStrokeColor="@color/primary"
+                app:hintTextColor="@color/primary"
+                android:theme="@style/TextInputLayoutAppearance"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_ADD_bluetooth_print_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey100"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- ===== TITLE =============================== -->
+            <TextView
+                android:id="@+id/tv_ADD_paired_devices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Select_device"
+                android:textColor="@color/grey100"
+                android:textSize="@dimen/size_normal"
+                android:layout_below="@+id/til_ADD_bluetooth_container"
+                android:layout_marginTop="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_paired_devices"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_ADD_paired_devices"
+                android:layout_above="@+id/btn_ADD_save_bluetooth"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="false"/>
+
+            <Button
+                android:id="@+id/btn_ADD_save_bluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Save"
+                android:textColor="@color/white"
+                app:backgroundTint="@null"
+                android:background="@drawable/background_r10_effect_color_primary"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="20dp" />
+
+        </RelativeLayout>
+
+<!-- ===== TCP/IP ============================== -->
+        <RelativeLayout
+            android:id="@+id/method_TCP_IP"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <!-- ===== PRINT NAME =============================== -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_ADD_tcp_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Print_name"
+                android:textColorHint="@color/grey500"
+                app:boxStrokeColor="@color/primary"
+                app:hintTextColor="@color/primary"
+                android:theme="@style/TextInputLayoutAppearance"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_ADD_tcp_print_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey100"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tv_ADD_enter_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Enter_your_printer_IP"
+                android:textColor="@color/grey100"
+                android:textSize="@dimen/size_normal"
+                android:layout_below="@+id/til_ADD_tcp_container"
+                android:layout_marginTop="10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/group_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_ADD_enter_ip"
+                android:layout_above="@+id/btn_ADD_save_tcp"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ex_192_168_0_10"
+                    android:textColorHint="@color/grey500"
+                    app:boxStrokeColor="@color/primary"
+                    app:hintTextColor="@color/primary"
+                    android:theme="@style/TextInputLayoutAppearance"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/btn_ADD_test_print"
+                    android:layout_marginEnd="20dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_ADD_ip_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey100"
+                        android:inputType="number|numberDecimal"
+                        android:digits="0123456789."
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button
+                    android:id="@+id/btn_ADD_test_print"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Test"
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_ADD_save_tcp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Save"
+                android:textColor="@color/white"
+                app:backgroundTint="@null"
+                android:background="@drawable/background_r10_effect_color_primary"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="20dp"
+                />
+        </RelativeLayout>
+
+
+
+<!-- ===== FINISH =========================================== -->
+
+    </LinearLayout>
+
+</LinearLayout>

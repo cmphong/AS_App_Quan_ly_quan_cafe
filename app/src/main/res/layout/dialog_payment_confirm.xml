@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginHorizontal="20dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/myBackgroundSecondary"
+        android:gravity="center"
+        android:paddingVertical="20dp"
+        android:text="@string/Payment_confirm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/heading_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingVertical="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Amount_receive"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_big"
+            />
+
+        <TextView
+            android:id="@+id/dialog_tv_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 0.00"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/heading_1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/dialog_btn_print"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Print"
+                android:textColor="@color/white"
+                app:backgroundTint="@null"
+                android:background="@drawable/background_r10_effect_color_primary"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/dialog_btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Confirm"
+                android:textColor="@color/white"
+                app:backgroundTint="@null"
+                android:background="@drawable/background_r10_effect_color_primary"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/dialog_btn_confirm_and_print"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Confirm_and_Print"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            android:background="@drawable/background_r10_effect_color_primary"/>
+
+    </LinearLayout>
+        
+
+</LinearLayout>

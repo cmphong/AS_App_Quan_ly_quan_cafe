@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/myBackgroundSecondary"
+    android:id="@+id/fragment_settings"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Photo"
+            android:textColor="@color/grey500"
+            android:textSize="@dimen/size_big"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/siv_logo_store"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_person"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            app:shapeAppearanceOverlay="@style/RoundedSquare"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Your_name"
+            android:textColor="@color/grey500"
+            android:textSize="@dimen/size_normal"
+            />
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/size_normal"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grey300"
+            android:hint="@string/Enter_name"
+            android:background="@drawable/background_r50_my_background_primary"
+            android:paddingVertical="14dp"
+            android:includeFontPadding="true"
+            android:paddingHorizontal="15dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Save"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/primary"/>
+
+</LinearLayout>

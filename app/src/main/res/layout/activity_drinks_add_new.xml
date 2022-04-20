@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myBackgroundSecondary"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/Add_Drink"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_bigest" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_warning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Required_fields_cannot_be_empty"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/size_normal"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@id/ln_image"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Drink_Name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_normal"
+                        tools:textColor="@color/white" />
+
+                    <EditText
+                        android:id="@+id/edt_type_drink_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_r50_my_background_primary"
+                        android:hint="@string/Type_name"
+                        android:includeFontPadding="true"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="14dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/grey400"
+                        android:textSize="@dimen/size_normal" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/Group"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_normal"
+                        tools:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/ln_select_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_r50_effect_my_background_primary"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/iv_ic_category_selected"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_cat_drink"
+                            android:visibility="gone"
+                            app:tint="@color/primary" />
+
+                        <TextView
+                            android:id="@+id/tv_select_group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="5dp"
+                            android:text="@string/Select_one"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/grey400"
+                            android:textSize="@dimen/size_normal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Image"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_normal" />
+
+                    <ImageView
+                        android:id="@+id/iv_drink_image"
+                        android:layout_width="180dp"
+                        android:layout_height="145dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_r10_my_background_primary"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/image_default" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/Price_"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+                        tools:textColor="@color/white" />
+
+                    <EditText
+                        android:id="@+id/edt_type_drink_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_r50_my_background_primary"
+                        android:hint="@string/Type_price"
+                        android:includeFontPadding="true"
+                        android:inputType="numberDecimal"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="14dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/grey400"
+                        android:textSize="@dimen/size_normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/Unit_"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+                        tools:textColor="@color/white" />
+
+                    <EditText
+                        android:id="@+id/edt_type_drink_unit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_r50_my_background_primary"
+                        android:hint="@string/Unit"
+                        android:includeFontPadding="true"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="14dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/grey400"
+                        android:textSize="@dimen/size_normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/Description"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_normal"
+                tools:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/edt_type_drink_note"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_r10"
+                android:backgroundTint="@color/myBackgroundPrimary"
+                android:gravity="top"
+                android:hint="@string/Type_Description"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey400"
+                android:textSize="@dimen/size_normal" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/is_required"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_normal" />
+
+            <!-- GROUP BUTTON =========================== -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp">
+
+                <Button
+                    android:id="@+id/btn_drink_add_back"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_r50_left_color_accent"
+                    android:text="@string/Back"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/btn_drink_add_new"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_r50_right_color_primary"
+                    android:text="@string/Add"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:id="@+id/item_category"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_category_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingVertical="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/wrapper_icon_category"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/iv_category_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_cat_cigarette_packet"
+                app:tint="@color/primary" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orange Juice"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_first_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_block"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,3 @@
+rootProject.name = "POS Coffee Shop"
+include ':app'
+include ':thermalPrinter'

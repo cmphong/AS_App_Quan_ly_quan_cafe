@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.c_m_p.poscoffeeshop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Printer & Pick Image -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.POSCoffeeShop">
+        <activity android:name=".Activity_User_Profile"></activity>
+        <activity
+            android:name=".Activity_SignUp_Verification"
+            android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".Activity_Payment" />
+        <activity android:name=".Activity_Table_Add_New" />
+        <activity
+            android:name=".Activity_Order"
+            android:parentActivityName=".Activity_Dashboard">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity_Dashboard" />
+        </activity>
+        <activity android:name=".Activity_Drinks_Add_New" />
+        <activity android:name=".Activity_Catagory_Add_New" />
+        <activity android:name=".Activity_CheckOut" />
+        <activity
+            android:name=".Activity_Dashboard"
+            android:configChanges="orientation" />
+        <activity android:name=".Activity_SignUp" />
+        <activity android:name=".Activity_Login" />
+        <activity
+            android:name=".Activity_Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity_Main" />
+    </application>
+
+</manifest>

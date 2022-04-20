@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="heading_1">24sp</dimen>
+    <dimen name="heading_2">22sp</dimen>
+    <dimen name="heading_3">20sp</dimen>
+    <dimen name="heading_4">18sp</dimen>
+    <dimen name="heading_5">16sp</dimen>
+
+    <dimen name="size_bigest">20sp</dimen>
+    <dimen name="size_big">18sp</dimen>
+    <dimen name="size_large">16sp</dimen>
+    <dimen name="size_normal">14sp</dimen>
+    <dimen name="size_small">12sp</dimen>
+    <dimen name="size_smallest">10sp</dimen>
+
+<!--    <dimen name="heigth_status_bar">@android:dimen/status_bar_height</dimen>-->
+
+<!--  ICON TOOLBAR  -->
+    <dimen name="menu_item_icon_size">24dp</dimen>
+    <dimen name="menu_item_ripple_size">48dp</dimen>
+</resources>
